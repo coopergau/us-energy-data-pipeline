@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
-import time
+from dotenv import load_dotenv
+import os
 
 def get_data_frame(url, params):
     response = requests.get(url, params=params)
@@ -15,8 +16,10 @@ def get_data_frame(url, params):
         print("Error, no data returned")
 
 def pull_data():
+    load_dotenv()
+
     API_KEY = {
-        "api_key": "YKYhWou9rcfs4mKe5ZVemdBCB9YRCqJ8wXtyv45C",  
+        "api_key": os.getenv("API_KEY"),  
     }
 
     CSV_NAMES = ["carbon_emission_data.csv", "energy_data.csv"]
