@@ -52,7 +52,7 @@ def export_to_snowflake(df, table):
         schema='RAW_DATA'
     )
 
-    success, _, _, _ = write_pandas(connection, df, table)
+    success, _, _, _ = write_pandas(connection, df, table, auto_create_table=True)
 
     if not success:
         print(f"error exporting {table} data to Snowflake")
