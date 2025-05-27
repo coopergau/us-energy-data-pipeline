@@ -1,0 +1,49 @@
+
+version: 2
+
+sources:
+  - name: raw_carbon_emissions
+    schema: RAW_DATA
+    tables:
+      - name: CARBON_EMISSIONS
+
+models:
+  - name: stg_emissions
+    description: "Staging model for the carbon emissions data. Renamed and typecast columns appropriately."
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: sector_id
+        description: "Two letter identifier for the economic sector"
+        tests:
+          - not_null
+      - name: sector_name
+        description: "Name of the economic sector"
+        tests:
+          - not_null
+      - name: fuel_id
+        description: "Two letter identifier for the fuel type"
+        tests:
+          - not_null
+      - name: fuel_name
+        description: "Name of the fuel type"
+        tests:
+          - not_null
+      - name: state_id
+        description: "Two letter state abbreviation code"
+        tests:
+          - not_null
+      - name: state_name
+        description: "Full name of the state"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured carbon emissions value"
+        tests:
+          - not_null
+      - name: value_units
+        description: "Units for the value column"
+        tests:
+          - not_null
