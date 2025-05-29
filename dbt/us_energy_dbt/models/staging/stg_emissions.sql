@@ -7,6 +7,5 @@ SELECT
   "stateId" AS state_id,
   "state-name" AS state_name,
   CAST("value" AS FLOAT) AS value,
-  "value-units" AS value_units
+  "value-units" AS units
 FROM {{ source('raw_carbon_emissions', 'CARBON_EMISSIONS') }}
-WHERE state_id != 'US'

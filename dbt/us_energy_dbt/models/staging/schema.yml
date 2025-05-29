@@ -6,6 +6,10 @@ sources:
     schema: RAW_DATA
     tables:
       - name: CARBON_EMISSIONS
+  - name: raw_energy
+    schema: RAW_DATA
+    tables:
+      - name: ENERGY
 
 models:
   - name: stg_emissions
@@ -43,7 +47,31 @@ models:
         description: "Measured carbon emissions value"
         tests:
           - not_null
-      - name: value_units
+      - name: units
+        description: "Units for the value column"
+        tests:
+          - not_null
+
+  - name: stg_energy
+    description: "Staging model for the energy data. Renamed and typecast columns appropriately."
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data. Not standard. For example, PAIMPUK is associated with Petroleum Imports From United Kingdom in Thousand Barrels per Day"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, for example Petroleum Imports From United Kingdom in Thousand Barrels per Day"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured value of whatever that row is"
+        tests:
+          - not_null
+      - name: units
         description: "Units for the value column"
         tests:
           - not_null
