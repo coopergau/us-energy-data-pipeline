@@ -3,5 +3,5 @@ WITH emissions AS (
 )
 SELECT 
 DISTINCT *
-FROM {{ source('raw_carbon_emissions', 'CARBON_EMISSIONS') }}
+FROM emissions
 WHERE state_id = 'US'

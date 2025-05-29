@@ -1,18 +1,8 @@
 version: 2
 
-sources:
-  - name: raw_carbon_emissions
-    schema: RAW_DATA
-    tables:
-      - name: CARBON_EMISSIONS
-  - name: raw_energy
-    schema: RAW_DATA
-    tables:
-      - name: ENERGY
-
 models:
-  - name: stg_emissions
-    description: "Staging model for the carbon emissions data. Renamed and typecast columns appropriately."
+  - name: int_state_emissions
+    description: "Carbon emission data that is about individual US states. The columns are the exact same as the stg_emissions model"
     columns:
       - name: year
         description: "Year of the recorded data"
@@ -50,24 +40,40 @@ models:
         description: "Units for the value column"
         tests:
           - not_null
-
-  - name: stg_energy
-    description: "Staging model for the energy data. Renamed and typecast columns appropriately."
+  
+  - name: int_nation_emissions
+    description: "Carbon emission data that is about the US as a whole. The columns are the exact same as the stg_emissions model"
     columns:
       - name: year
         description: "Year of the recorded data"
         tests:
           - not_null
-      - name: msn
-        description: "Codes to help identify the type of data. Not standard. For example, PAIMPUK is associated with Petroleum Imports From United Kingdom in Thousand Barrels per Day"
+      - name: sector_id
+        description: "Two letter identifier for the economic sector"
         tests:
           - not_null
-      - name: series_description
-        description: "A description of the data in that row, for example Petroleum Imports From United Kingdom in Thousand Barrels per Day"
+      - name: sector_name
+        description: "Name of the economic sector"
+        tests:
+          - not_null
+      - name: fuel_id
+        description: "Two letter identifier for the fuel type"
+        tests:
+          - not_null
+      - name: fuel_name
+        description: "Name of the fuel type"
+        tests:
+          - not_null
+      - name: state_id
+        description: "Two letter state abbreviation code"
+        tests:
+          - not_null
+      - name: state_name
+        description: "Full name of the state"
         tests:
           - not_null
       - name: value
-        description: "Measured value of whatever that row is"
+        description: "Measured carbon emissions value"
         tests:
           - not_null
       - name: units
