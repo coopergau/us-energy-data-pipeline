@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: int_state_emissions
+  - name: mart_state_emissions
     description: "Carbon emission data that is about individual US states. The columns are the exact same as the stg_emissions model"
     columns:
       - name: year
@@ -41,7 +41,7 @@ models:
         tests:
           - not_null
   
-  - name: int_nation_emissions
+  - name: mart_nation_emissions
     description: "Carbon emission data that is about the US as a whole. The columns are the exact same as the stg_emissions model"
     columns:
       - name: year
@@ -80,3 +80,33 @@ models:
         description: "Units for the value column"
         tests:
           - not_null
+
+  - name: mart_cooling_deg_days
+    description: "Annual cooling degree-days data"
+  
+  - name: mart_heating_deg_days
+    description: "Annual heating degree-days data"
+    
+  - name: mart_energy_capacity
+    description: "Energy capacity from different resources for the whole of the US"
+  
+  - name: mart_energy_consumption
+    description: "Energy consumption from different resources for the whole of the US"
+    
+  - name: mart_energy_generation
+    description: "Energy generation from different resources for the whole of the US"
+
+  - name: mart_exports_foreign
+    description: "data on energy exports to other countries"
+
+  - name: mart_imports_foreign
+    description: "data on energy imports from other countries"
+
+  - name: mart_exports_national
+    description: "Data on total US energy exports"
+    
+  - name: mart_imports_national
+    description: "Data on total US energy imports"
+
+  
+    
