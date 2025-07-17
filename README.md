@@ -1,18 +1,10 @@
-dbt plan:
-    from emissions table:
-        - total us emissions
-        - emissions by state
-    from energy table:
-        - imports (filter by msn no ending in 'us')
-        - exports (filter by msn no ending in 'us')
-        - imports (overall data so msn ending in 'us')
-        - exports (overall data so msn ending in 'us')
-        - energy generation
-        - energy capacity
-        - energy consumption
-        - cooling degree days
-        - heating degree days
+# US Energy and Carbon Emissions Data Pipeline
 
-things to do:
-    - fill out the column descriptions for the mart models
+## Overview
+ELT pipeline processing US energy and carbon emissions data from the EIA API using Python, Snowflake, dbt and Power BI.
 
+## Tools
+- Python (data extraction) - Complete
+- Snowflake (data loading) - Complete
+- dbt (data transformating) - Complete
+- Power BI (visualizations) - in progress
