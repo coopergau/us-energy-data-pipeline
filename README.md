@@ -28,7 +28,7 @@ The data includes:
 
 ### 1. Carbon Emissions
 
-<img src="power bi/images/carbon_emissions.PNG" width="500" />
+<img src="power bi/images/carbon_emissions.PNG" width="600" />
 
 ### 2. Energy Imports and Exports
 
