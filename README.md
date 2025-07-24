@@ -26,20 +26,20 @@ The data includes:
 
 ## Power BI Visualizations
 
-### 1. Carbon Emissions
+### 2. Carbon Emissions
 
 <img src="power bi/images/carbon_emissions.PNG" width="600" />
 
-### 2. Energy Imports and Exports
+### 3. Energy Imports and Exports
 
-<img src="power bi/images/import_export.PNG" width="500" />
-
-
-### 3. Cooling Degree Days
-
-<img src="power bi/images/cooling_deg_days.PNG" width="500" />
+<img src="power bi/images/import_export.PNG" width="600" />
 
 
-### 4. Heating Degree Days
+### 4. Cooling Degree Days
 
-<img src="power bi/images/heating_deg_days.PNG" width="500" />
+<img src="power bi/images/cooling_deg_days.PNG" width="600" />
+
+
+### 5. Heating Degree Days
+
+<img src="power bi/images/heating_deg_days.PNG" width="600" />
