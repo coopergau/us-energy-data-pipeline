@@ -1,8 +1,5 @@
 # US Energy and Carbon Emissions Data Pipeline
 
-## Notice
-This project is near completion. It will be finished upon the addition of the Power BI visuals for the energy consumption, generation, and capacity models, as well as descriptions for them and the other visuals below.
-
 ## Overview
 ELT pipeline processing US energy and carbon emissions data from the U.S. Energy Information Administration (EIA) using Python, Snowflake, dbt, and Power BI.
 The data includes:
@@ -15,7 +12,7 @@ The data includes:
 - Python (data extraction) - Complete
 - Snowflake (data loading) - Complete
 - dbt (data transformating) - Complete
-- Power BI (visualizations) - in progress
+- Power BI (visualizations) - Complete
 
 ## Pipeline Flow
 1. (Extract) Python was used to extract the data via the EIA API. Due to the API rates, the data had to be extracted in multiple seperate chunks which were then joined together as pandas dataframes. The initial raw dataframes where energy and emissions.
@@ -26,6 +23,10 @@ The data includes:
 
 ## Power BI Visualizations
 
+### 1. Energy Generation
+
+<img src="power bi/images/energy_generation.PNG" width="600" />
+
 ### 2. Carbon Emissions
 
 <img src="power bi/images/carbon_emissions.PNG" width="600" />
@@ -34,11 +35,9 @@ The data includes:
 
 <img src="power bi/images/import_export.PNG" width="600" />
 
-
 ### 4. Cooling Degree Days
 
 <img src="power bi/images/cooling_deg_days.PNG" width="600" />
-
 
 ### 5. Heating Degree Days
 
