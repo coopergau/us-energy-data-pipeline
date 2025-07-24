@@ -19,9 +19,10 @@ The data includes:
 
 ### 1. Energy Generation
 
+<img src="power bi/images/energy_generation.PNG" width="600" />
+
 It can be seen that the overall energy generation has stayed relatively consistent over the 12 years, but there have been some significant changes within specific energy categories.
 fossil fuel generation has subtly decreased, while there has been a significant increase in the generation of renewable energy sources. Despite this, natural gas generation has increased over 70 % and fossil fuels are still much more dominant than renewable sources. Nuclear is also shown maintining a steady generation. Note that wood and waste can have different environental impacts than low-carbon sources like solar, wind, geothermal, and hydro, so they have not been included as renewable sources.
-<img src="power bi/images/energy_generation.PNG" width="600" />
 
 ### 2. Carbon Emissions
 
