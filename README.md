@@ -34,6 +34,8 @@ The carbon emission data is for petroleum, coal, and natural gas. Over the 12 ye
 
 <img src="power bi/images/imports_exports.PNG" width="600" />
 
+For the imports and exports page it might be tempting to compare the absolute numbers of natural gas data and petroleum data but this can be misleading. Natural gas is measured in billion cubic feet and petroleum is measured in thousand barrels per day. Instead this page can be used to analyze the difference between imports and exports for a given fuel and how that ratio has changed over time. It can be seen that in 2010 the natural gas imports were more than double their exports, but in 2022 they were less than half due to a drastic increase in exports. Similarly, in 2010 petroleum imports were roughly six times greater than their exports, but in 2022 there were slightly less imports than exports, primarily due to the increase in exports. This data is also depicted based on country, where unsurprisingly, Canada and Mexico are the top two nations whenit comes to trading these resources with the US.
+
 ### 4. Cooling Degree Days
 
 <img src="power bi/images/cooling_deg_days.PNG" width="600" />
