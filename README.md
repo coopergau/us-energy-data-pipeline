@@ -28,6 +28,8 @@ fossil fuel generation has subtly decreased, while there has been a significant 
 
 <img src="power bi/images/carbon_emissions.PNG" width="600" />
 
+The carbon emission data is for petroleum, coal, and natural gas. Over the 12 year period, emissions from natural gas have significantly increased while emissions from coal have significantly decreased. Emissions from petroleum have decreased slightly when comparing the 2022 value to 2010, but the line chart shows that the emissions have essentially stayed consistent. Overall there is a slight downtrend in carbon emissions. It can also be seen that Texas has produced almost double the emissions than any other state. California has also produced noticeably more emissions than other states. The Map displays that other than Texas and California the northeast states have produced slightly more emissions that the rest of the country.
+
 ### 3. Energy Imports and Exports
 
 <img src="power bi/images/imports_exports.PNG" width="600" />
