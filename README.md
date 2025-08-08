@@ -36,10 +36,11 @@ The carbon emission data is for petroleum, coal, and natural gas. Over the 12 ye
 
 For the imports and exports page it might be tempting to compare the absolute numbers of natural gas data and petroleum data but this can be misleading. Natural gas is measured in billion cubic feet and petroleum is measured in thousand barrels per day. Instead this page can be used to analyze the difference between imports and exports for a given fuel and how that ratio has changed over time. It can be seen that in 2010 the natural gas imports were more than double their exports, but in 2022 they were less than half due to a drastic increase in exports. Similarly, in 2010 petroleum imports were roughly six times greater than their exports, but in 2022 there were slightly less imports than exports, primarily due to the increase in exports. This data is also depicted based on country, where unsurprisingly, Canada and Mexico are the top two nations whenit comes to trading these resources with the US.
 
-### 4. Cooling Degree Days
+### 4. Cooling Degree Days and Cooling Degree Days
 
 <img src="power bi/images/cooling_deg_days.PNG" width="600" />
 
-### 5. Heating Degree Days
 
 <img src="power bi/images/heating_deg_days.PNG" width="600" />
+
+Both the heating degree days (HDDs) and cooling degree days (CDDs) pages tell a similar story. From 2010 to 2022 the amount of both of them has been relatively consistent: The largest decrease in HDDs was about 10% form the average, while the largest decrease in CDDs was about 12% from the average. For largest increase from the average, HDDs went up by about 9% while CDDs went up almost 8%. The split line graph is to analyze if these trends were consistent across all regions. Though the absolute amounts are quite different from region to region, it can be seen that the trends are very similar for each respecting page. So looking at the pages separately, it is evident that the amounts of annual HDDs and CDDs have changed much. Looking a them together though, highlights their difference in absolutes. There have been many more HDDs than CDDs over the time frame with the average annual HDDs being almost four times that of CDDs.

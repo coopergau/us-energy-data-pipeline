@@ -82,31 +82,220 @@ models:
           - not_null
 
   - name: mart_cooling_deg_days
-    description: "Annual cooling degree-days data"
+      description: "Annual cooling degree-days data"
+      columns:
+        - name: year
+          description: "Year of the recorded data"
+          tests:
+            - not_null
+        - name: msn
+          description: "Codes to help identify the type of data. Not standard. For example, PAIMPUK is associated with Petroleum Imports From United Kingdom in Thousand Barrels per Day"
+          tests:
+            - not_null
+        - name: series_description
+          description: "A description of the data in that row, filtered for cooling degree-days data"
+          tests:
+            - not_null
+        - name: value
+          description: "Measured cooling degree-days value"
+          tests:
+            - not_null
+        - name: units
+          description: "Units for the value column"
+          tests:
+            - not_null
   
   - name: mart_heating_deg_days
     description: "Annual heating degree-days data"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data. Not standard. For example, PAIMPUK is associated with Petroleum Imports From United Kingdom in Thousand Barrels per Day"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for heating degree-days data"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured heating degree-days value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column"
+        tests:
+          - not_null
     
   - name: mart_energy_capacity
     description: "Energy capacity from different resources for the whole of the US"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for US-level capacity data (ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for capacity-related energy data"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured energy capacity value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column, filtered for Million Kilowatts"
+        tests:
+          - not_null
   
   - name: mart_energy_consumption
     description: "Energy consumption from different resources for the whole of the US"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for US-level consumption data (ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for consumption-related energy data"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured energy consumption value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column, filtered for Btu-based measurements"
+        tests:
+          - not_null
     
   - name: mart_energy_generation
     description: "Energy generation from different resources for the whole of the US"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for US-level generation data (ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for generation-related energy data"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured energy generation value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column, filtered for Million Kilowatthours"
+        tests:
+          - not_null
 
   - name: mart_exports_foreign
-    description: "data on energy exports to other countries"
+    description: "Data on energy exports to other countries"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for non-US export data (not ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for export-related energy data to foreign countries"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured energy export value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column"
+        tests:
+          - not_null
 
   - name: mart_imports_foreign
-    description: "data on energy imports from other countries"
+    description: "Data on energy imports from other countries"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for non-US import data (not ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for import-related energy data from foreign countries"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured energy import value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column"
+        tests:
+          - not_null
 
   - name: mart_exports_national
     description: "Data on total US energy exports"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for US-level export data (ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for export-related energy data at the national US level"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured national energy export value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column"
+        tests:
+          - not_null
     
   - name: mart_imports_national
     description: "Data on total US energy imports"
+    columns:
+      - name: year
+        description: "Year of the recorded data"
+        tests:
+          - not_null
+      - name: msn
+        description: "Codes to help identify the type of data, filtered for US-level import data (ending in 'US')"
+        tests:
+          - not_null
+      - name: series_description
+        description: "A description of the data in that row, filtered for import-related energy data at the national US level"
+        tests:
+          - not_null
+      - name: value
+        description: "Measured national energy import value"
+        tests:
+          - not_null
+      - name: units
+        description: "Units for the value column"
+        tests:
+          - not_null
 
   
     
